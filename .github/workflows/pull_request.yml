@@ -11,6 +11,6 @@ jobs:
       uses: Ginxo/github-action-build-chain@java11
       with:
         parent-dependencies: 'kogito-apps'
-        build-command: 'mvn clean install -DskipTests | mvn clean install -DskipTests -Ppersistence | mvn clean install -DskipTests -Pevents'
+        build-command: 'mvn clean install | mvn clean install -Ppersistence | mvn clean install -Pevents'
       env:
           GITHUB_TOKEN: "${{ secrets.KIE_TOKEN }}"
