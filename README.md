@@ -110,3 +110,4 @@ Please refer to the [Kogito Documentation](https://docs.jboss.org/kogito/release
 of how to install the operator to your environment in order to try it there.
 .
 .
+.
