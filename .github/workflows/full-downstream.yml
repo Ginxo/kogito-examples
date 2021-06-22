@@ -3,6 +3,9 @@ name: Build Chain Full Downstream
 on: [pull_request]
 
 jobs:
+  concurrency:
+    group: fdb-${{ github.head_ref }}
+    cancel-in-progress: true
   build-chain:
     strategy:
       matrix:
